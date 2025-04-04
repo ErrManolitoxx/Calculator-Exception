@@ -9,7 +9,6 @@ import lombok.EqualsAndHashCode;
 @AllArgsConstructor
 @Data
 public class EmptyArrayException extends RuntimeException {
-    public EmptyArrayException(String message) {
-        super(message);
-    }
+
+    private final Double[] nums;
 }
