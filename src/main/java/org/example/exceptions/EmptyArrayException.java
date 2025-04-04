@@ -4,11 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@AllArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-@Data
-public class DivideByZeroException extends Exception {
 
-    private final double num1;
-    private final double num2;
+@EqualsAndHashCode(callSuper = true)
+@AllArgsConstructor
+@Data
+public class EmptyArrayException extends RuntimeException {
+    public EmptyArrayException(String message) {
+        super(message);
+    }
 }
