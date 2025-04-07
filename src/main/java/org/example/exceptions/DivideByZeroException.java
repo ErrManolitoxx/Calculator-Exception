@@ -9,6 +9,6 @@ import lombok.EqualsAndHashCode;
 @Data
 public class DivideByZeroException extends Exception {
 
-    private final double num1;
     private final double num2;
+
 }
