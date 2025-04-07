@@ -16,7 +16,6 @@ public class Calculator {
 
     private final static Scanner scanner = new Scanner(System.in);
 
-
     public Double divide() throws DivideByZeroException {
         System.out.println("Introduzca dos números: ");
 
@@ -34,7 +33,6 @@ public class Calculator {
         double result = num1 / num2;
 
         return result;
-
     }
 
     public List<Double> doubleList() throws EmptyArrayException {
